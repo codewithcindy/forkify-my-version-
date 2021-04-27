@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-purple-grey: #e2d5d5;
+  --light-grey: #bbbbbb;
+  --dark-brown-grey: #8e7f7f;
+  --dark-red-brown: #865858;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(226, 213, 213, 1),
+    rgba(142, 127, 127, 1)
+  );
+}
+
+.container {
+  height: 85vh;
+  width: 90vw;
+  background: #f5efef;
+  margin: 2vw auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+/******** HEADER *********/
+
+.logo {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  height: 50px;
+}
+
+/******** MAIN *********/
+
+.begin--search--bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.end--search--bar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.search--bar {
+  width: 350px;
+  height: 50px;
+  border-color: rgba(142, 127, 127, 0.6);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background: none;
+  margin-bottom: 1rem;
+  outline: none;
+  font-size: 1.3rem;
+  padding-bottom: 0;
+  color: var(--dark-red-brown);
+  caret-color: var(--dark-brown-grey);
+}
+
+.search--btn {
+  color: var(--dark-brown-grey);
+  font-size: 1.2rem;
+  transform: translateY(1rem);
+  border: none;
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+.search--btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.search--text {
+  color: rgba(142, 127, 127, 0.7);
+}
+
+/******** SEARCH RESULTS *********/
+
+.search--results {
+  display: flex;
+}
+
+.preview {
+  height: 5rem;
+  border: 1px solid green;
+}
+
+.preview--link {
+  display: flex;
+  background: green;
+}
+
+.preview--fig {
+  height: 50px;
+  width: 50px;
+}
+
+.preview img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.preview--text {
+  display: flex;
+  flex-direction: column;
+}
+
+/******** RECIPE *********/
+
+.recipe {
+  border: 1px solid lightblue;
+}
