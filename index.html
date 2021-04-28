@@ -8,7 +8,14 @@
     <!-- Custom Styling -->
     <link rel="stylesheet" href="src/styles/styles.css" />
 
-    <!-- Custom Fonts -->
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Icons -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -23,6 +30,15 @@
       <header>
         <div class="logo">
           <img src="src/img/logo.png" alt="" />
+        </div>
+
+        <div class="end--search--bar">
+          <div>
+            <input class="search--bar" type="text" autofocus />
+            <button class="search--btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -40,15 +56,6 @@
           </p>
         </div> -->
 
-        <div class="end--search--bar">
-          <div>
-            <input class="search--bar" type="text" autofocus />
-            <button class="search--btn">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
-
         <div class="search--results">
           <ul class="results">
             <li class="preview">
@@ -62,9 +69,133 @@
                 </div>
               </a>
             </li>
+            <li class="preview">
+              <a class="preview--link" href="">
+                <figure class="preview--fig">
+                  <img src="/src/img/avo-test-img.jpg" alt="" />
+                </figure>
+                <div class="preview--text">
+                  <h4 class="preview--title">Avocado Egg Salad</h4>
+                  <p class="preview--publisher">Two Peas and Their Pod</p>
+                </div>
+              </a>
+            </li>
+            <li class="preview">
+              <a class="preview--link" href="">
+                <figure class="preview--fig">
+                  <img src="/src/img/avo-test-img.jpg" alt="" />
+                </figure>
+                <div class="preview--text">
+                  <h4 class="preview--title">Avocado Egg Salad</h4>
+                  <p class="preview--publisher">Two Peas and Their Pod</p>
+                </div>
+              </a>
+            </li>
+            <li class="preview">
+              <a class="preview--link" href="">
+                <figure class="preview--fig">
+                  <img src="/src/img/avo-test-img.jpg" alt="" />
+                </figure>
+                <div class="preview--text">
+                  <h4 class="preview--title">Avocado Egg Salad</h4>
+                  <p class="preview--publisher">Two Peas and Their Pod</p>
+                </div>
+              </a>
+            </li>
+            <li class="preview">
+              <a class="preview--link" href="">
+                <figure class="preview--fig">
+                  <img src="/src/img/avo-test-img.jpg" alt="" />
+                </figure>
+                <div class="preview--text">
+                  <h4 class="preview--title">Avocado Egg Salad</h4>
+                  <p class="preview--publisher">Two Peas and Their Pod</p>
+                </div>
+              </a>
+            </li>
           </ul>
 
-          <div class="recipe"></div>
+          <div class="recipe">
+            <h3 class="recipe--select empty">
+              Select a tab to view the full recipe
+            </h3>
+            <div class="recipe--image">
+              <img src="src/img/avo-test-img.jpg" alt="" />
+              <h3 class="recipe--title">Avocado Egg Salad</h3>
+            </div>
+            <div class="recipe--details">
+              <div class="recipe--details__top">
+                <div class="recipe--time">
+                  <i class="far fa-clock"></i>
+                  20 Minutes
+                </div>
+                <div class="recipe--servings">
+                  <i class="fas fa-user-friends"></i>
+                  2 Servings
+
+                  <div class="recipe--servings__buttons">
+                    <button class="btn btn--decrease">
+                      <svg>
+                        <use href="src/img/icons.svg#icon-minus-circle"></use>
+                      </svg>
+                    </button>
+                    <button class="btn btn--increase">
+                      <svg>
+                        <use href="src/img/icons.svg#icon-plus-circle"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="recipe--details__bottom">
+                Recipe crafted by
+                <span class="recipe--publisher">Two Peas and Their Pod</span>
+              </div>
+            </div>
+            <div class="recipe--ingredients">
+              <h1>Ingredients</h1>
+              <ul class="recipe--ingredients">
+                <li>
+                  <div class="recipe--quantity">2</div>
+                  <div class="recipe--description">
+                    <span class="recipe--unit"></span>
+                    hard boiled eggs
+                  </div>
+                </li>
+                <li>
+                  <div class="recipe--quantity">2</div>
+                  <div class="recipe--description">
+                    <span class="recipe--unit"></span>
+                    small avocados pitted
+                  </div>
+                </li>
+                <li>
+                  <div class="recipe--quantity">1/4</div>
+                  <div class="recipe--description">
+                    <span class="recipe--unit">tsp</span>
+                    dijon mustard
+                  </div>
+                </li>
+                <li>
+                  <div class="recipe--quantity">1</div>
+                  <div class="recipe--description">
+                    <span class="recipe--unit">tbsp</span>
+                    fresh lemon juice
+                  </div>
+                </li>
+                <li>
+                  <div class="recipe--quantity"></div>
+                  <div class="recipe--description">
+                    <span class="recipe--unit"></span>
+                    salt and pepper to taste
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </main>
     </div>
