@@ -32,14 +32,26 @@
           <img src="src/img/logo.png" alt="" />
         </div>
 
-        <div class="end--search--bar">
-          <div>
-            <input class="search--bar" type="text" autofocus />
-            <button class="search--btn">
-              <i class="fas fa-search"></i>
-            </button>
+        <nav class="nav">
+          <div class="nav--search--bar">
+            <div>
+              <input class="search--bar" type="text" autofocus />
+              <button class="search--btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
           </div>
-        </div>
+          <ul class="nav--list">
+            <li class="nav--item">
+              <button class="nav--item--btn nav--btn--add-recipe">
+                Add recipe
+              </button>
+            </li>
+            <li class="nav--item">
+              <button class="nav--item--btn nav--btn--saved">Saved</button>
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <main>
@@ -135,14 +147,10 @@
 
                   <div class="recipe--servings__buttons">
                     <button class="btn btn--decrease">
-                      <svg>
-                        <use href="src/img/icons.svg#icon-minus-circle"></use>
-                      </svg>
+                      <span>-</span>
                     </button>
                     <button class="btn btn--increase">
-                      <svg>
-                        <use href="src/img/icons.svg#icon-plus-circle"></use>
-                      </svg>
+                      <span>+</span>
                     </button>
                   </div>
                 </div>
@@ -152,12 +160,13 @@
 
               <div class="recipe--details__bottom">
                 Recipe crafted by
-                <span class="recipe--publisher">Two Peas and Their Pod</span>
+                <a class="recipe--publisher" href="">Two Peas and Their Pod</a>
               </div>
             </div>
             <div class="recipe--ingredients">
               <h1>Ingredients</h1>
-              <ul class="recipe--ingredients">
+              <i class="far fa-bookmark recipe--bookmark"></i>
+              <ul class="recipe--ingredients--list">
                 <li>
                   <div class="recipe--quantity">2</div>
                   <div class="recipe--description">
