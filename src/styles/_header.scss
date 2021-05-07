@@ -1,0 +1,56 @@
+
+header {
+  height: 10rem;
+  padding: 0.8rem 3rem;
+}
+
+.logo {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.nav--search--bar {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.nav--list {
+  list-style: none;
+  flex-basis: 0;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav--item {
+  margin: 0 1rem;
+}
+
+.nav--item--btn {
+  color: $darkRedBrown;
+  font-family: "Darker Grotesque", sans-serif;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+
+.nav--item--btn:hover {
+  color: $darkBrownGrey;
+  cursor: pointer;
+}

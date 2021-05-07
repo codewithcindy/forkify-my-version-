@@ -1,0 +1,18 @@
+"use strict";
+
+console.log("test");
+
+const getRecipe = async function() {
+    try {
+        const result = await fetch("https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886");
+        const data = await result.json();
+
+        if (!result.ok) throw new Error (`${data.message} (${result.status})` )
+        console.log(result);
+        console.log(data);
+    } catch (err) {
+        alert(err);
+    }
+}
+
+getRecipe();

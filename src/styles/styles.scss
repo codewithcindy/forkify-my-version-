@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  $lightPurpleGrey: #e2d5d5;
+  $lightGrey: #bbbbbb;
+  $darkBrownGrey: #8e7f7f;
+  $darkRedBrown: #865858;
+
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(226, 213, 213, 1),
+    rgba(142, 127, 127, 1)
+  );
+
+  height: 100vh;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.container {
+  background: #f5efef;
+  padding: 2rem 0;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+/******** HEADER *********/
+@import "./header";
+
+/******** MAIN *********/
+@import "./main";
+
+/******** SEARCH RESULTS *********/
+@import "./searchResults";
+
+/******** RECIPE *********/
+@import "./recipe";
+

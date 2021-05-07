@@ -1,0 +1,24 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithcindy/forkify-my-version-.git"
+  },
+  "author": "Cindy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewithcindy/forkify-my-version-/issues"
+  },
+  "homepage": "https://github.com/codewithcindy/forkify-my-version-#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  }
+}
